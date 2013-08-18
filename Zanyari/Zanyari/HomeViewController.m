@@ -28,6 +28,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 -(void)viewWillAppear:(BOOL)animated
 {
     NSString * selectedLang = [[NSUserDefaults standardUserDefaults]valueForKey:@"qLanguage"];
@@ -59,10 +60,6 @@
         [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"fun_rest.png"] forState:UIControlStateNormal];
         [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_bah.png"] forState:UIControlStateNormal];
     }
-
-
-    
-    
 }
 
 

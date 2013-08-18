@@ -30,6 +30,47 @@
 	// Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSString * selectedLang = [[NSUserDefaults standardUserDefaults]valueForKey:@"qLanguage"];
+    
+    if ([selectedLang isEqualToString:@"english"])
+    {
+        [self.btnHistory setTitle:@"History" forState:UIControlStateNormal];
+        [self.btnGeography setTitle:@"Geography" forState:UIControlStateNormal];
+        [self.btnScience setTitle:@"Science" forState:UIControlStateNormal];
+        [self.btnEntmt setTitle:@"Entertainment" forState:UIControlStateNormal];
+        [self.btnRandom setTitle:@"Random" forState:UIControlStateNormal];
+    }
+    
+    if ([selectedLang isEqualToString:@"kurmanji"])
+    {
+        [self.btnHistory setTitle:@"Mêjû" forState:UIControlStateNormal];
+        [self.btnGeography setTitle:@"Zanist" forState:UIControlStateNormal];
+        [self.btnScience setTitle:@"Cografya" forState:UIControlStateNormal];
+        [self.btnEntmt setTitle:@"Kêf" forState:UIControlStateNormal];
+        [self.btnRandom setTitle:@"Têkel" forState:UIControlStateNormal];
+    }
+    
+    if ([selectedLang isEqualToString:@"sorani"])
+    {
+        [self.btnHistory setTitle:@"Mêjû" forState:UIControlStateNormal];
+        [self.btnGeography setTitle:@"Zanist" forState:UIControlStateNormal];
+        [self.btnScience setTitle:@"Cografî" forState:UIControlStateNormal];
+        [self.btnEntmt setTitle:@"Kêf" forState:UIControlStateNormal];
+        [self.btnRandom setTitle:@"Têkel" forState:UIControlStateNormal];
+    }
+    
+    if ([selectedLang isEqualToString:@"bahdini"])
+    {
+        [self.btnHistory setTitle:@"Mêjû" forState:UIControlStateNormal];
+        [self.btnGeography setTitle:@"Zanist" forState:UIControlStateNormal];
+        [self.btnScience setTitle:@"Cografya" forState:UIControlStateNormal];
+        [self.btnEntmt setTitle:@"Kêf" forState:UIControlStateNormal];
+        [self.btnRandom setTitle:@"Têkel" forState:UIControlStateNormal];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

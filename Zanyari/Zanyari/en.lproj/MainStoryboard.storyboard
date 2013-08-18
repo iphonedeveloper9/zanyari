@@ -315,6 +315,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Choose a categoty" id="tT7-hp-FaQ"/>
                     <connections>
+                        <outlet property="btnEntmt" destination="19O-fT-JeU" id="ocy-PY-WRR"/>
+                        <outlet property="btnGeography" destination="HXA-Oz-gwI" id="Gyl-LA-DQj"/>
+                        <outlet property="btnHistory" destination="4bi-hg-FNN" id="o55-ww-TKL"/>
+                        <outlet property="btnRandom" destination="JF4-tI-LSo" id="WHz-vH-eTW"/>
+                        <outlet property="btnScience" destination="Zom-sR-cYh" id="KQj-ps-8x1"/>
                         <segue destination="Gfs-Hm-yVE" kind="push" identifier="quizSegue" id="yFg-gK-Nuh"/>
                     </connections>
                 </viewController>

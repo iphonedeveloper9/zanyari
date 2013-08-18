@@ -12,9 +12,11 @@
 {
     NSArray *arrLanguages;
 }
+
 @property (weak, nonatomic) IBOutlet UIPickerView *LangPicker;
 @property (weak, nonatomic) IBOutlet UIView *langPickerView;
 @property (weak, nonatomic) IBOutlet UITextField *txtLanguage;
+
 - (IBAction)btnDone_Click:(id)sender;
 
 @end

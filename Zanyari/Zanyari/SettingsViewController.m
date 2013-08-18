@@ -23,6 +23,9 @@
     return self;
 }
 
+#pragma mark
+#pragma mark view methods
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -55,6 +58,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark
+#pragma mark private methods
+
 - (NSString *)ConvertToTitleCase:(NSString*)str
 {
     NSMutableString *str2 = [NSMutableString string];
@@ -69,6 +75,7 @@
     return str2.capitalizedString;
 }
 
+#pragma mark
 #pragma mark pickerview methods
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
@@ -100,6 +107,7 @@
     return [arrLanguages objectAtIndex:row];
 }
 
+#pragma mark
 #pragma mark textfield methods
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
@@ -117,6 +125,9 @@
     [UIView commitAnimations];
 }
 
+#pragma mark
+#pragma mark button clicks
+
 - (IBAction)btnDone_Click:(id)sender {
     
     CGRect langPickerFrame = self.langPickerView.frame;
@@ -128,6 +139,6 @@
     self.langPickerView.frame = langPickerFrame;
     
     [UIView commitAnimations];
-
 }
+
 @end

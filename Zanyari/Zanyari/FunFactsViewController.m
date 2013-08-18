@@ -90,6 +90,7 @@
     
 }
 
+
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     
     if(connection == funFactCon)
@@ -106,6 +107,9 @@
         [[LoadingScreen sharedInstance]dismissLoadingScreen];
     }
 }
+
+#pragma mark
+#pragma mark button clicks
 
 - (IBAction)btnNext_Click:(id)sender {
     
