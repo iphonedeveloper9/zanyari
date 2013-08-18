@@ -10,7 +10,6 @@
 #import "LoadingScreen.h"
 #import "Toast+UIView.h"
 
-
 @interface QuizViewController ()
 
 @end
@@ -133,8 +132,9 @@
 
 -(void)ShowWrongAnsToast
 {
-    [self.view makeToast:@"Wrong Answer!"
-                duration:1.0
+    NSString *correctAns = [arrOpts objectAtIndex:[[dictQuestionData objectForKey:@"answer"]integerValue] - 1];
+    [self.view makeToast:[NSString stringWithFormat:@"Wrong Answer! \nCorrect Answer is: %@", correctAns]
+                duration:2.0
                 position:@"center"
                    image:[UIImage imageNamed:@"wrong.png"]];
     
