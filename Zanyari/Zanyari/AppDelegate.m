@@ -13,7 +13,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [[NSUserDefaults standardUserDefaults]setValue:@"english" forKey:@"qLanguage"];
+    
+    if ([[NSUserDefaults standardUserDefaults]valueForKey:@"qLanguage"] == NULL) {
+        
+        [[NSUserDefaults standardUserDefaults]setValue:@"english" forKey:@"qLanguage"];
+        
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
     return YES;
 }
 							

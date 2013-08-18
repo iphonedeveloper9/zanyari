@@ -28,6 +28,42 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSString * selectedLang = [[NSUserDefaults standardUserDefaults]valueForKey:@"qLanguage"];
+    
+    if ([selectedLang isEqualToString:@"english"])
+    {
+        [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz.png"] forState:UIControlStateNormal];
+        [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"funfacts.png"] forState:UIControlStateNormal];
+        [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"support.png"] forState:UIControlStateNormal];
+    }
+    
+    if ([selectedLang isEqualToString:@"kurmanji"])
+    {
+        [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz_kur.png"] forState:UIControlStateNormal];
+        [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"fun_rest.png"] forState:UIControlStateNormal];
+        [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_kur.png"] forState:UIControlStateNormal];
+    }
+    
+    if ([selectedLang isEqualToString:@"sorani"])
+    {
+        [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz_sor.png"] forState:UIControlStateNormal];
+        [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"fun_rest.png"] forState:UIControlStateNormal];
+        [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_sor.png"] forState:UIControlStateNormal];
+    }
+    
+    if ([selectedLang isEqualToString:@"bahdini"])
+    {
+        [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz_kur.png"] forState:UIControlStateNormal];
+        [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"fun_rest.png"] forState:UIControlStateNormal];
+        [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_bah.png"] forState:UIControlStateNormal];
+    }
+
+
+    
+    
+}
 
 
 #pragma mark
