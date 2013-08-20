@@ -20,6 +20,71 @@
             </objects>
             <point key="canvasLocation" x="-469" y="-131"/>
         </scene>
+        <!--True False View Controller-->
+        <scene sceneID="dml-MX-IHW">
+            <objects>
+                <viewController id="EHq-A0-s2y" customClass="TrueFalseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vYT-Je-Bgc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bgq.png" id="Xsm-1t-gqO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kHx-WO-ItG">
+                                <rect key="frame" x="20" y="76" width="280" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.53725492949999998" green="0.35686275360000003" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kiD-vG-7V6">
+                                <rect key="frame" x="96" y="202" width="129" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="0.53725492949999998" green="0.35686275360000003" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="True">
+                                    <color key="titleColor" red="0.53725492949999998" green="0.35686275360000003" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTrue_Click:" destination="EHq-A0-s2y" eventType="touchUpInside" id="SB1-hq-zty"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oGH-2k-2KT">
+                                <rect key="frame" x="96" y="261" width="129" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="0.53725492949999998" green="0.35686275360000003" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="0.53725492949999998" green="0.35686275360000003" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFalse_Click:" destination="EHq-A0-s2y" eventType="touchUpInside" id="Kzb-Ok-cEe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ypi-Vq-GxO"/>
+                    <connections>
+                        <outlet property="btnFalse" destination="oGH-2k-2KT" id="dO6-On-YNg"/>
+                        <outlet property="btnTrue" destination="kiD-vG-7V6" id="RII-8z-VGZ"/>
+                        <outlet property="lblSentence" destination="kHx-WO-ItG" id="Z4V-74-9EE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTt-go-vaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90" y="458"/>
+        </scene>
         <!--Fun Facts View Controller-->
         <scene sceneID="xpv-iD-zRP">
             <objects>
@@ -153,7 +218,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ROC-3T-D84">
-                                <rect key="frame" x="79" y="170" width="41" height="151"/>
+                                <rect key="frame" x="59" y="170" width="41" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="quiz.png">
@@ -168,7 +233,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bte-Su-BKa">
-                                <rect key="frame" x="130" y="205" width="36" height="116"/>
+                                <rect key="frame" x="109" y="205" width="36" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="funfacts.png">
@@ -183,7 +248,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UKV-nv-vcm">
-                                <rect key="frame" x="164" y="170" width="18" height="151"/>
+                                <rect key="frame" x="186" y="170" width="18" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="support.png">
@@ -198,9 +263,24 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="man.png" id="8Jf-Ky-kIf">
-                                <rect key="frame" x="182" y="177" width="59" height="144"/>
+                                <rect key="frame" x="204" y="177" width="58" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ICx-O6-FEn">
+                                <rect key="frame" x="154" y="179" width="34" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="true_false_eng_book.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTF_Click:" destination="2" eventType="touchUpInside" id="g3u-XF-RMh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -209,9 +289,11 @@
                         <outlet property="btnFunFacts" destination="Bte-Su-BKa" id="BVW-Kt-phe"/>
                         <outlet property="btnQuiz" destination="ROC-3T-D84" id="JWf-d0-Umj"/>
                         <outlet property="btnSettings" destination="UKV-nv-vcm" id="kQc-ft-EJe"/>
+                        <outlet property="btnTF" destination="ICx-O6-FEn" id="7Jl-ZO-O73"/>
                         <segue destination="Wwd-hL-kuF" kind="push" identifier="categorySegue" id="gvs-yg-UBm"/>
                         <segue destination="nM9-E5-6mq" kind="push" identifier="funFactsSegue" id="hSW-1z-p81"/>
                         <segue destination="FRD-1a-F8R" kind="push" identifier="settingsSegue" id="hcE-VI-FPC"/>
+                        <segue destination="EHq-A0-s2y" kind="push" identifier="TFSegue" id="WsE-Zg-HTP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -460,8 +542,82 @@
         <image name="quiz.png" width="77" height="281"/>
         <image name="shelf.png" width="791" height="104"/>
         <image name="support.png" width="37" height="328"/>
+        <image name="true_false_eng_book.png" width="77" height="319"/>
         <image name="zanyari.png" width="303" height="138"/>
     </resources>
+    <classes>
+        <class className="CategoryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnEntnmt_Click:"/>
+                <relationship kind="action" name="btnGeography_Click:"/>
+                <relationship kind="action" name="btnHistory_Click:"/>
+                <relationship kind="action" name="btnRandom_Click:"/>
+                <relationship kind="action" name="btnScience_Click:"/>
+                <relationship kind="outlet" name="btnEntmt" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnGeography" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnHistory" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnRandom" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnScience" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="FunFactsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FunFactsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnNext_Click:"/>
+                <relationship kind="outlet" name="lblFunFact" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnFunFacts_Click:"/>
+                <relationship kind="action" name="btnQuiz_click:"/>
+                <relationship kind="action" name="btnSettings_Click:"/>
+                <relationship kind="action" name="btnTF_Click:"/>
+                <relationship kind="outlet" name="btnFunFacts" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnQuiz" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnSettings" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnTF" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="QuizViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnOpt1_Click:"/>
+                <relationship kind="action" name="btnOpt2_Click:"/>
+                <relationship kind="action" name="btnOpt3_Click:"/>
+                <relationship kind="action" name="btnOpt4_Click:"/>
+                <relationship kind="action" name="btnSkip_Click:"/>
+                <relationship kind="outlet" name="btnOpt1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnOpt2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnOpt3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnOpt4" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnSkip" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="lblQuestion" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblTimer" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnDone_Click:"/>
+                <relationship kind="outlet" name="LangPicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="langPickerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="txtLanguage" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="TrueFalseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TrueFalseViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnFalse_Click:"/>
+                <relationship kind="action" name="btnTrue_Click:"/>
+                <relationship kind="outlet" name="btnFalse" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnTrue" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="lblSentence" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

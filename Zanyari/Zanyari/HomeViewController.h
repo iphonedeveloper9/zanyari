@@ -18,5 +18,7 @@
 - (IBAction)btnQuiz_click:(id)sender;
 - (IBAction)btnFunFacts_Click:(id)sender;
 - (IBAction)btnSettings_Click:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnTF;
+- (IBAction)btnTF_Click:(id)sender;
 
 @end

@@ -38,6 +38,7 @@
         [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz.png"] forState:UIControlStateNormal];
         [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"funfacts.png"] forState:UIControlStateNormal];
         [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"support.png"] forState:UIControlStateNormal];
+        [self.btnTF setBackgroundImage:[UIImage imageNamed:@"true_false_eng_book.png"] forState:UIControlStateNormal];
     }
     
     if ([selectedLang isEqualToString:@"kurmanji"])
@@ -45,6 +46,7 @@
         [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz_kur.png"] forState:UIControlStateNormal];
         [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"fun_rest.png"] forState:UIControlStateNormal];
         [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_kur.png"] forState:UIControlStateNormal];
+        [self.btnTF setBackgroundImage:[UIImage imageNamed:@"true_false_kur_book.png"] forState:UIControlStateNormal];
     }
     
     if ([selectedLang isEqualToString:@"sorani"])
@@ -52,6 +54,7 @@
         [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz_sor.png"] forState:UIControlStateNormal];
         [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"fun_rest.png"] forState:UIControlStateNormal];
         [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_sor.png"] forState:UIControlStateNormal];
+        [self.btnTF setBackgroundImage:[UIImage imageNamed:@"true_false_sor_book.png"] forState:UIControlStateNormal];
     }
     
     if ([selectedLang isEqualToString:@"bahdini"])
@@ -59,6 +62,7 @@
         [self.btnQuiz setBackgroundImage:[UIImage imageNamed:@"quiz_kur.png"] forState:UIControlStateNormal];
         [self.btnFunFacts setBackgroundImage:[UIImage imageNamed:@"fun_rest.png"] forState:UIControlStateNormal];
         [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_bah.png"] forState:UIControlStateNormal];
+        [self.btnTF setBackgroundImage:[UIImage imageNamed:@"true_false_bah_book.png"] forState:UIControlStateNormal];
     }
 }
 
@@ -78,4 +82,9 @@
     
     [self performSegueWithIdentifier:@"settingsSegue" sender:nil];
 }
+- (IBAction)btnTF_Click:(id)sender {
+    
+    [self performSegueWithIdentifier:@"TFSegue" sender:nil];
+}
+
 @end

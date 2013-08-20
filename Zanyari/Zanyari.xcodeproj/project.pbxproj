@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7033B88917C3964000220573 /* true_false_bah_book.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033B88517C3964000220573 /* true_false_bah_book.png */; };
+		7033B88A17C3964000220573 /* true_false_eng_book.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033B88617C3964000220573 /* true_false_eng_book.png */; };
+		7033B88B17C3964000220573 /* true_false_kur_book.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033B88717C3964000220573 /* true_false_kur_book.png */; };
+		7033B88C17C3964000220573 /* true_false_sor_book.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033B88817C3964000220573 /* true_false_sor_book.png */; };
+		703BAAE417C25AEF001A1FB3 /* TrueFalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BAAE317C25AEF001A1FB3 /* TrueFalseViewController.m */; };
 		70737B4817BEB966002D6DB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70737B4717BEB966002D6DB2 /* UIKit.framework */; };
 		70737B4A17BEB966002D6DB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70737B4917BEB966002D6DB2 /* Foundation.framework */; };
 		70737B4C17BEB966002D6DB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70737B4B17BEB966002D6DB2 /* CoreGraphics.framework */; };
@@ -50,6 +55,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7033B88517C3964000220573 /* true_false_bah_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true_false_bah_book.png; sourceTree = "<group>"; };
+		7033B88617C3964000220573 /* true_false_eng_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true_false_eng_book.png; sourceTree = "<group>"; };
+		7033B88717C3964000220573 /* true_false_kur_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true_false_kur_book.png; sourceTree = "<group>"; };
+		7033B88817C3964000220573 /* true_false_sor_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true_false_sor_book.png; sourceTree = "<group>"; };
+		703BAAE217C25AEF001A1FB3 /* TrueFalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseViewController.h; sourceTree = "<group>"; };
+		703BAAE317C25AEF001A1FB3 /* TrueFalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseViewController.m; sourceTree = "<group>"; };
 		70737B4417BEB966002D6DB2 /* Zanyari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zanyari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70737B4717BEB966002D6DB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		70737B4917BEB966002D6DB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -163,6 +174,8 @@
 				707A0F1E17BFE78900A21890 /* QuizViewController.m */,
 				707A0F2017BFEF1E00A21890 /* FunFactsViewController.h */,
 				707A0F2117BFEF1E00A21890 /* FunFactsViewController.m */,
+				703BAAE217C25AEF001A1FB3 /* TrueFalseViewController.h */,
+				703BAAE317C25AEF001A1FB3 /* TrueFalseViewController.m */,
 				707A0F2317BFF08700A21890 /* SettingsViewController.h */,
 				707A0F2417BFF08700A21890 /* SettingsViewController.m */,
 				70737B4E17BEB966002D6DB2 /* Supporting Files */,
@@ -188,6 +201,10 @@
 		707A0EF317BFCF8E00A21890 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7033B88517C3964000220573 /* true_false_bah_book.png */,
+				7033B88617C3964000220573 /* true_false_eng_book.png */,
+				7033B88717C3964000220573 /* true_false_kur_book.png */,
+				7033B88817C3964000220573 /* true_false_sor_book.png */,
 				707A0F3517C014B300A21890 /* correct.png */,
 				707A0F3617C014B500A21890 /* wrong.png */,
 				707A0F2F17C0002800A21890 /* blackbg.jpg */,
@@ -310,6 +327,10 @@
 				707A0F3017C0002C00A21890 /* blackbg.jpg in Resources */,
 				707A0F3717C014B700A21890 /* correct.png in Resources */,
 				707A0F3817C014B700A21890 /* wrong.png in Resources */,
+				7033B88917C3964000220573 /* true_false_bah_book.png in Resources */,
+				7033B88A17C3964000220573 /* true_false_eng_book.png in Resources */,
+				7033B88B17C3964000220573 /* true_false_kur_book.png in Resources */,
+				7033B88C17C3964000220573 /* true_false_sor_book.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +351,7 @@
 				707A0F2B17BFFE7000A21890 /* splashView.m in Sources */,
 				707A0F2C17BFFE7000A21890 /* LoadingScreen.m in Sources */,
 				707A0F3417C010AC00A21890 /* Toast+UIView.m in Sources */,
+				703BAAE417C25AEF001A1FB3 /* TrueFalseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +439,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zanyari/Zanyari-Prefix.pch";
 				INFOPLIST_FILE = "Zanyari/Zanyari-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,7 +452,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zanyari/Zanyari-Prefix.pch";
 				INFOPLIST_FILE = "Zanyari/Zanyari-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
