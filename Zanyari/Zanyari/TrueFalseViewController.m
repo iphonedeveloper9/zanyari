@@ -3,7 +3,6 @@
 //  Zanyari
 //
 //  Created by B's Mac on 19/08/13.
-//  Copyright (c) 2013 iphonedeveloper9. All rights reserved.
 //
 
 #import "TrueFalseViewController.h"
