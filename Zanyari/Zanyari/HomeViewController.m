@@ -7,6 +7,7 @@
 
 #import "HomeViewController.h"
 
+
 @interface HomeViewController ()
 
 @end
@@ -18,6 +19,15 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"white_elephants" ofType:@"mp3"]];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    audioPlayer.numberOfLoops = -1;
+    [audioPlayer play];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -63,8 +73,14 @@
         [self.btnSettings setBackgroundImage:[UIImage imageNamed:@"sup_bah.png"] forState:UIControlStateNormal];
         [self.btnTF setBackgroundImage:[UIImage imageNamed:@"true_false_bah_book.png"] forState:UIControlStateNormal];
     }
+    
+    [audioPlayer play];
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [audioPlayer stop];
+}
 
 #pragma mark
 #pragma mark button clicks

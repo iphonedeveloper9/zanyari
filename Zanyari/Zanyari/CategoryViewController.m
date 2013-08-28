@@ -31,6 +31,13 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    
+    self.btnHistory.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnGeography.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnScience.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnEntmt.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnRandom.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+
     NSString * selectedLang = [[NSUserDefaults standardUserDefaults]valueForKey:@"qLanguage"];
     
     if ([selectedLang isEqualToString:@"english"])

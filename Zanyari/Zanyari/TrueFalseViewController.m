@@ -36,8 +36,28 @@
     
     receivedData = [[NSMutableData alloc]init];
     
+    self.lblSentence.font = [UIFont fontWithName:@"efflor" size:17];
+    
+    self.btnTrue.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnFalse.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+
+    
     [self FetchNewTf];
+    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"groovy_bgm" ofType:@"mp3"]];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    audioPlayer.numberOfLoops = -1;
+    [audioPlayer play];
+
 	// Do any additional setup after loading the view.
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [audioPlayer stop];
 }
 
 - (void)didReceiveMemoryWarning

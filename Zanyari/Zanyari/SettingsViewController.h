@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtLanguage;
 
 - (IBAction)btnDone_Click:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lblLanguage;
 
 @end

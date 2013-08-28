@@ -125,6 +125,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UWy-YX-u4U"/>
                     <connections>
+                        <outlet property="btnNext" destination="viI-PQ-rI9" id="f7b-K2-GSO"/>
                         <outlet property="lblFunFact" destination="zVG-fx-6Uw" id="CeL-k9-pP7"/>
                     </connections>
                 </viewController>
@@ -169,7 +170,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="EJ9-G1-gmg">
-                                <rect key="frame" x="103" y="67" width="197" height="30"/>
+                                <rect key="frame" x="117" y="67" width="183" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85882359743118286" green="0.76862752437591553" blue="0.62352943420410156" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="textColor" red="0.53725492949999998" green="0.35686275360000003" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
@@ -177,7 +178,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Language:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V5b-xI-VxK">
-                                <rect key="frame" x="22" y="71" width="80" height="21"/>
+                                <rect key="frame" x="22" y="71" width="93" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.53725492949999998" green="0.35686275360000003" blue="0.29019609089999998" alpha="1" colorSpace="deviceRGB"/>
@@ -190,6 +191,7 @@
                     <connections>
                         <outlet property="LangPicker" destination="Ef1-gp-124" id="VSf-Ms-QAr"/>
                         <outlet property="langPickerView" destination="cux-KY-Uj3" id="rjS-LR-y9z"/>
+                        <outlet property="lblLanguage" destination="V5b-xI-VxK" id="xey-Er-xXe"/>
                         <outlet property="txtLanguage" destination="EJ9-G1-gmg" id="oAg-D5-RyY"/>
                     </connections>
                 </viewController>
@@ -565,6 +567,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FunFactsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="btnNext_Click:"/>
+                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="lblFunFact" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -604,6 +607,7 @@
                 <relationship kind="action" name="btnDone_Click:"/>
                 <relationship kind="outlet" name="LangPicker" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="langPickerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="lblLanguage" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="txtLanguage" candidateClass="UITextField"/>
             </relationships>
         </class>

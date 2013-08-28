@@ -6,6 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface TrueFalseViewController : UIViewController
 {
@@ -15,6 +17,8 @@
     NSDictionary *dictTfData;
     
     int tfId;
+    
+    AVAudioPlayer *audioPlayer;
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *btnTrue;

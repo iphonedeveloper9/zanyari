@@ -12,6 +12,10 @@
 		7033B88B17C3964000220573 /* true_false_kur_book.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033B88717C3964000220573 /* true_false_kur_book.png */; };
 		7033B88C17C3964000220573 /* true_false_sor_book.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033B88817C3964000220573 /* true_false_sor_book.png */; };
 		703BAAE417C25AEF001A1FB3 /* TrueFalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BAAE317C25AEF001A1FB3 /* TrueFalseViewController.m */; };
+		70586FE917CE02260093D382 /* groovy_bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70586FE717CE02260093D382 /* groovy_bgm.mp3 */; };
+		70586FEA17CE02260093D382 /* white_elephants.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70586FE817CE02260093D382 /* white_elephants.mp3 */; };
+		70586FEE17CE02570093D382 /* efflor.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70586FED17CE02570093D382 /* efflor.ttf */; };
+		70586FF017CE04A80093D382 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70586FEF17CE04A80093D382 /* AVFoundation.framework */; };
 		70737B4817BEB966002D6DB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70737B4717BEB966002D6DB2 /* UIKit.framework */; };
 		70737B4A17BEB966002D6DB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70737B4917BEB966002D6DB2 /* Foundation.framework */; };
 		70737B4C17BEB966002D6DB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70737B4B17BEB966002D6DB2 /* CoreGraphics.framework */; };
@@ -61,6 +65,10 @@
 		7033B88817C3964000220573 /* true_false_sor_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = true_false_sor_book.png; sourceTree = "<group>"; };
 		703BAAE217C25AEF001A1FB3 /* TrueFalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueFalseViewController.h; sourceTree = "<group>"; };
 		703BAAE317C25AEF001A1FB3 /* TrueFalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueFalseViewController.m; sourceTree = "<group>"; };
+		70586FE717CE02260093D382 /* groovy_bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = groovy_bgm.mp3; sourceTree = "<group>"; };
+		70586FE817CE02260093D382 /* white_elephants.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = white_elephants.mp3; sourceTree = "<group>"; };
+		70586FED17CE02570093D382 /* efflor.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = efflor.ttf; sourceTree = "<group>"; };
+		70586FEF17CE04A80093D382 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		70737B4417BEB966002D6DB2 /* Zanyari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zanyari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70737B4717BEB966002D6DB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		70737B4917BEB966002D6DB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70586FF017CE04A80093D382 /* AVFoundation.framework in Frameworks */,
 				707A0F2E17BFFFA700A21890 /* QuartzCore.framework in Frameworks */,
 				70737B4817BEB966002D6DB2 /* UIKit.framework in Frameworks */,
 				70737B4A17BEB966002D6DB2 /* Foundation.framework in Frameworks */,
@@ -130,6 +139,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70586FE617CE01FB0093D382 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				70586FE717CE02260093D382 /* groovy_bgm.mp3 */,
+				70586FE817CE02260093D382 /* white_elephants.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		70586FEC17CE023D0093D382 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				70586FED17CE02570093D382 /* efflor.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		70737B3B17BEB965002D6DB2 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +178,7 @@
 		70737B4617BEB966002D6DB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70586FEF17CE04A80093D382 /* AVFoundation.framework */,
 				707A0F2D17BFFFA700A21890 /* QuartzCore.framework */,
 				70737B4717BEB966002D6DB2 /* UIKit.framework */,
 				70737B4917BEB966002D6DB2 /* Foundation.framework */,
@@ -186,6 +213,8 @@
 		70737B4E17BEB966002D6DB2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70586FEC17CE023D0093D382 /* Fonts */,
+				70586FE617CE01FB0093D382 /* Sounds */,
 				707A0EF317BFCF8E00A21890 /* Images */,
 				70737B4F17BEB966002D6DB2 /* Zanyari-Info.plist */,
 				70737B5017BEB966002D6DB2 /* InfoPlist.strings */,
@@ -331,6 +360,9 @@
 				7033B88A17C3964000220573 /* true_false_eng_book.png in Resources */,
 				7033B88B17C3964000220573 /* true_false_kur_book.png in Resources */,
 				7033B88C17C3964000220573 /* true_false_sor_book.png in Resources */,
+				70586FE917CE02260093D382 /* groovy_bgm.mp3 in Resources */,
+				70586FEA17CE02260093D382 /* white_elephants.mp3 in Resources */,
+				70586FEE17CE02570093D382 /* efflor.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +421,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Teamitt, inc (LCRJ28EATX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Teamitt, inc (LCRJ28EATX)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -404,6 +437,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "0B022516-C1A6-48DC-918C-BBD5825E5F8C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0B022516-C1A6-48DC-918C-BBD5825E5F8C";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -420,7 +455,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Teamitt, inc (LCRJ28EATX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Teamitt, inc (LCRJ28EATX)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -428,6 +464,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "0B022516-C1A6-48DC-918C-BBD5825E5F8C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0B022516-C1A6-48DC-918C-BBD5825E5F8C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -439,9 +477,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zanyari/Zanyari-Prefix.pch";
 				INFOPLIST_FILE = "Zanyari/Zanyari-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -452,9 +490,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zanyari/Zanyari-Prefix.pch";
 				INFOPLIST_FILE = "Zanyari/Zanyari-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

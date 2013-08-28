@@ -39,7 +39,16 @@
     
     timer = 0;
     
+    self.btnOpt1.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnOpt2.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnOpt3.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnOpt4.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+    self.btnSkip.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
     
+    self.lblQuestion.font = [UIFont fontWithName:@"efflor" size:14];
+    self.lblTimer.font = [UIFont fontWithName:@"efflor" size:17];
+
+
     [self FetchNewQuestion];
     
 	// Do any additional setup after loading the view.

@@ -44,8 +44,11 @@
     
     self.txtLanguage.text = selLang;
     
-        
     int rowIndex = [arrLanguages indexOfObject:selLang];
+    
+    self.txtLanguage.font = [UIFont fontWithName:@"efflor" size:15];
+    
+    self.lblLanguage.font = [UIFont fontWithName:@"efflor" size:16];
     
     [self.LangPicker selectRow:rowIndex inComponent:0 animated:YES];
     // Do any additional setup after loading the view.
@@ -140,4 +143,8 @@
     [UIView commitAnimations];
 }
 
+- (void)viewDidUnload {
+    [self setLblLanguage:nil];
+    [super viewDidUnload];
+}
 @end

@@ -31,6 +31,11 @@
     
     receivedData = [[NSMutableData alloc]init];
     
+    self.lblFunFact.font = [UIFont fontWithName:@"efflor" size:17];
+    
+    self.btnNext.titleLabel.font = [UIFont fontWithName:@"efflor" size:15];
+
+    
     [self FetchNewFunFact];
 	// Do any additional setup after loading the view.
 }
@@ -114,5 +119,9 @@
     
     funFactId ++;
     [self FetchNewFunFact];
+}
+- (void)viewDidUnload {
+    [self setBtnNext:nil];
+    [super viewDidUnload];
 }
 @end

@@ -15,10 +15,11 @@
     NSDictionary *dictfunFactData;
     
     int funFactId;
-
-
 }
+
 @property (weak, nonatomic) IBOutlet UILabel *lblFunFact;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
+
 - (IBAction)btnNext_Click:(id)sender;
 
 @end
